@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+
+{% block title %}Your Name - Teaching{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Teaching Philosophy -->
+    <section class="mb-5">
+        <h1 class="mb-4">Teaching</h1>
+        <div class="row">
+            <div class="col-lg-8">
+                <h2 class="mb-3">Teaching Philosophy</h2>
+                <p class="lead">Brief statement about your teaching philosophy and approach to education.</p>
+                <p>Expand on your teaching methods, goals, and how you engage with students. Discuss your experience and what makes your teaching style unique.</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="{{ url_for('static', filename='images/teaching.jpg') }}" alt="Teaching" class="img-fluid rounded">
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Courses -->
+    <section class="mb-5">
+        <h2 class="mb-4">Current Courses</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="course-card card">
+                    <div class="card-body">
+                        <h3 class="card-title">Course Title 1</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Course Code - Semester/Year</h6>
+                        <p class="card-text">Course description and objectives. Include key topics covered and learning outcomes.</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">Syllabus</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Course Materials</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="course-card card">
+                    <div class="card-body">
+                        <h3 class="card-title">Course Title 2</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Course Code - Semester/Year</h6>
+                        <p class="card-text">Course description and objectives. Include key topics covered and learning outcomes.</p>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary btn-sm">Syllabus</a>
+                            <a href="#" class="btn btn-outline-secondary btn-sm">Course Materials</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past Courses -->
+    <section class="mb-5">
+        <h2 class="mb-4">Past Courses</h2>
+        <div class="list-group">
+            <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Past Course Title 1</h5>
+                    <small class="text-muted">Semester/Year</small>
+                </div>
+                <p class="mb-1">Brief description of the course and its impact on students.</p>
+                <small class="text-muted">Course Code</small>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Past Course Title 2</h5>
+                    <small class="text-muted">Semester/Year</small>
+                </div>
+                <p class="mb-1">Brief description of the course and its impact on students.</p>
+                <small class="text-muted">Course Code</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Resources -->
+    <section class="mb-5">
+        <h2 class="mb-4">Student Resources</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Office Hours</h5>
+                        <p class="card-text">Information about your office hours, location, and how to schedule appointments.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Academic Support</h5>
+                        <p class="card-text">Links to academic resources, tutoring services, and study materials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Research Opportunities</h5>
+                        <p class="card-text">Information about research assistant positions and student projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %} 
